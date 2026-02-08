@@ -318,6 +318,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         
         .benefit-card {
@@ -352,72 +354,232 @@
             line-height: 1.8;
         }
 
-        /* What is Psychoanalysis Section */
-        .psychoanalysis-section {
+        /* Immigration Pain Section - NOVA SEÇÃO */
+        .immigration-pain {
             padding: 120px 0;
-            background: var(--bg-cream);
+            background: linear-gradient(135deg, rgba(44, 95, 93, 0.03), rgba(74, 139, 135, 0.05));
+            position: relative;
         }
 
-        .psychoanalysis-content {
+        .pain-content {
             max-width: 900px;
             margin: 0 auto;
+            text-align: center;
         }
 
-        .psychoanalysis-content p {
-            font-size: 1.1rem;
-            color: var(--text-soft);
+        .pain-intro {
+            margin-bottom: 60px;
+        }
+
+        .pain-intro h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.8rem;
+            color: var(--text-dark);
             margin-bottom: 24px;
-            line-height: 1.9;
+            font-weight: 600;
+            line-height: 1.3;
         }
 
-        .psychoanalysis-list {
-            margin: 30px 0;
-            padding-left: 0;
-            list-style: none;
-        }
-
-        .psychoanalysis-list li {
-            padding: 12px 0 12px 35px;
+        .pain-intro p {
+            font-size: 1.2rem;
             color: var(--text-soft);
-            font-size: 1.05rem;
-            position: relative;
             line-height: 1.8;
         }
 
-        .psychoanalysis-list li::before {
-            content: '•';
-            color: var(--primary-light);
-            font-weight: bold;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0;
-            top: 8px;
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
         }
 
-        .quote-box {
+        .pain-item {
             background: white;
-            padding: 40px;
-            border-radius: 15px;
-            border-left: 5px solid var(--secondary);
-            margin: 40px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
         }
 
-        .quote-box p {
+        .pain-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .pain-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .pain-item h3 {
             font-family: 'Crimson Pro', serif;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .pain-item p {
+            color: var(--text-soft);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .pain-quote {
+            background: white;
+            padding: 50px;
+            border-radius: 25px;
+            margin-top: 60px;
+            border-left: 6px solid var(--secondary);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+        }
+
+        .pain-quote p {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.6rem;
             color: var(--primary);
             font-style: italic;
-            margin: 0;
             line-height: 1.6;
+            margin: 0;
         }
 
-        .subsection-title {
+        .pain-transition {
+            margin-top: 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .pain-transition h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .pain-transition p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Psychoanalysis Section - OPÇÃO 1 VISUAL */
+        .psychoanalysis-section {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .psycho-intro {
+            max-width: 800px;
+            margin: 40px auto 60px;
+            text-align: center;
+        }
+
+        .psycho-intro p {
+            font-size: 1.2rem;
+            color: var(--text-soft);
+            line-height: 1.8;
+        }
+
+        .psycho-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .psycho-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .psycho-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .psycho-card-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .psycho-card h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .psycho-card p {
+            color: var(--text-soft);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .psycho-quote-visual {
+            max-width: 800px;
+            margin: 80px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 8rem;
+            font-family: Georgia, serif;
+            color: var(--secondary);
+            opacity: 0.3;
+            line-height: 0.5;
+        }
+
+        .psycho-quote-visual p {
             font-family: 'Crimson Pro', serif;
             font-size: 1.8rem;
             color: var(--primary);
-            margin: 50px 0 24px;
+            font-style: italic;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .psycho-immigration {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 25px;
+            padding: 60px;
+            margin-top: 60px;
+        }
+
+        .immigration-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .immigration-icon {
+            font-size: 5rem;
+            flex-shrink: 0;
+        }
+
+        .immigration-text h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 16px;
             font-weight: 600;
+        }
+
+        .immigration-text p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         /* About Me Section */
@@ -514,26 +676,6 @@
             font-style: italic;
             margin: 0;
         }
-
-        .formation-title {
-            font-family: 'Crimson Pro', serif;
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin: 30px 0 16px;
-            font-weight: 600;
-        }
-
-        .formation-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .formation-list li {
-            padding: 10px 0;
-            color: var(--text-soft);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
         
         /* How It Works */
         .how-it-works {
@@ -597,105 +739,6 @@
         .step p {
             color: var(--text-soft);
             font-size: 0.95rem;
-        }
-        
-        /* Pricing */
-        .pricing {
-            padding: 120px 0;
-            background: white;
-        }
-        
-        .pricing-cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            max-width: 900px;
-            margin: 60px auto 0;
-        }
-        
-        .pricing-card {
-            background: var(--bg-cream);
-            padding: 50px 40px;
-            border-radius: 20px;
-            border: 3px solid transparent;
-            transition: all 0.4s ease;
-            position: relative;
-        }
-        
-        .pricing-card.featured {
-            border-color: var(--secondary);
-            background: white;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pricing-badge {
-            position: absolute;
-            top: -15px;
-            right: 30px;
-            background: var(--secondary);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .pricing-card h3 {
-            font-family: 'Crimson Pro', serif;
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-        
-        .pricing-card .price {
-            font-family: 'Crimson Pro', serif;
-            font-size: 3rem;
-            color: var(--text-dark);
-            margin: 20px 0;
-            font-weight: 600;
-        }
-        
-        .pricing-card .price span {
-            font-size: 1.2rem;
-            color: var(--text-soft);
-            font-weight: 400;
-        }
-        
-        .pricing-features {
-            list-style: none;
-            margin: 30px 0;
-        }
-        
-        .pricing-features li {
-            padding: 12px 0;
-            color: var(--text-soft);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .pricing-features li::before {
-            content: '✓';
-            color: var(--primary-light);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .pricing-note {
-            margin-top: 20px;
-            font-size: 0.95rem;
-            color: var(--text-soft);
-            font-style: italic;
-            line-height: 1.6;
-        }
-        
-        .pricing-card .btn-primary {
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
         }
         
         /* CTA Section */
@@ -843,10 +886,24 @@
             .hero-text h1 {
                 font-size: 2.5rem;
             }
+
+            .pain-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
             
             .benefits-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
+            }
+
+            .psycho-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .immigration-content {
+                flex-direction: column;
+                text-align: center;
             }
 
             .about-content {
@@ -866,10 +923,6 @@
             
             .step::before {
                 display: none;
-            }
-            
-            .pricing-cards {
-                grid-template-columns: 1fr;
             }
             
             .footer-content {
@@ -899,6 +952,10 @@
             .section-header h2 {
                 font-size: 2rem;
             }
+
+            .psycho-cards-grid {
+                grid-template-columns: 1fr;
+            }
             
             .cta-content h2 {
                 font-size: 2rem;
@@ -909,7 +966,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Escuta Brasileira - Psicoterapia e Psicanálise</div>
+            <div class="logo">Escuta Brasileira</div>
             <a href="#contato" class="nav-cta">Agende sua Sessão</a>
         </nav>
     </header>
@@ -961,49 +1018,41 @@
         </div>
     </section>
 
-    <section class="benefits">
+    <section class="immigration-pain">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Por que escolher</span>
-                <h2>Um espaço seguro para você</h2>
-                <p>Compreendo os desafios únicos de viver longe de casa. Vamos trabalhar juntos no seu processo de autoconhecimento.</p>
-            </div>
-            
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌍</div>
-                    <h3>Entendo sua Realidade</h3>
-                    <p>Conheço os desafios da imigração, a saudade, a adaptação cultural e o esforço de reconstruir a vida em outro país.</p>
+            <div class="pain-content">
+                <div class="pain-intro">
+                    <h2>Você não está sozinho nessa jornada</h2>
+                    <p>A experiência de imigração traz desafios emocionais profundos que muitas vezes não são compreendidos por quem nunca passou por isso.</p>
                 </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">💬</div>
-                    <h3>No Seu Idioma</h3>
-                    <p>Expresse-se com liberdade em português, sem barreiras linguísticas que atrapalhem sua livre associação e seu processo analítico.</p>
+
+                <div class="pain-grid">
+                    <div class="pain-item">
+                        <span class="pain-emoji">😔</span>
+                        <h3>A Saudade que Pesa</h3>
+                        <p>A distância da família, dos amigos, das referências culturais. Aquela sensação de não pertencer completamente a lugar nenhum.</p>
+                    </div>
+
+                    <div class="pain-item">
+                        <span class="pain-emoji">😰</span>
+                        <h3>Pressão e Ansiedade</h3>
+                        <p>A cobrança de "dar certo", provar que a decisão valeu a pena, enquanto lida com incertezas e desafios diários.</p>
+                    </div>
+
+                    <div class="pain-item">
+                        <span class="pain-emoji">🎭</span>
+                        <h3>Crise de Identidade</h3>
+                        <p>Quem você era antes e quem está se tornando agora. A sensação de estar entre dois mundos, sem pertencer completamente a nenhum.</p>
+                    </div>
                 </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">⏰</div>
-                    <h3>Horários Flexíveis</h3>
-                    <p>Sessões online que se adaptam à sua rotina, incluindo horários noturnos e finais de semana.</p>
+
+                <div class="pain-quote">
+                    <p>"A imigração não é só trocar de país. É reconstruir quem você é, lidar com perdas invisíveis e encontrar seu lugar em um mundo que ainda é estranho."</p>
                 </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔒</div>
-                    <h3>Total Confidencialidade</h3>
-                    <p>Suas sessões são 100% privadas e seguem rigorosos padrões éticos de sigilo profissional.</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Processo de Autoconhecimento</h3>
-                    <p>A psicanálise é um processo único para cada pessoa. Vamos trabalhar no seu tempo, respeitando suas descobertas e elaborações.</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">🤲</div>
-                    <h3>Espaço de Escuta</h3>
-                    <p>Um lugar seguro onde você pode falar livremente, sem julgamentos, explorando seus conflitos internos e questões inconscientes.</p>
+
+                <div class="pain-transition">
+                    <h3>Você merece um espaço para elaborar tudo isso</h3>
+                    <p>A psicanálise oferece um lugar seguro onde você pode falar sobre essas dores, compreender seus conflitos internos e encontrar formas mais autênticas de viver essa nova realidade.</p>
                 </div>
             </div>
         </div>
@@ -1014,42 +1063,54 @@
             <div class="section-header">
                 <span class="section-tag">Entenda melhor</span>
                 <h2>O que é Psicanálise?</h2>
+                <p>Um espaço de escuta para você se conhecer profundamente</p>
             </div>
             
-            <div class="psychoanalysis-content">
-                <p>
-                    A psicanálise é um método de investigação do inconsciente, criado por Sigmund Freud, que busca compreender os processos mentais profundos que influenciam nossa vida, nossos relacionamentos e nosso sofrimento.
-                </p>
-                
-                <p>
-                    Diferente de outras abordagens terapêuticas, a psicanálise não busca resultados imediatos ou soluções prontas. Ela oferece um espaço de escuta onde você pode:
-                </p>
-                
-                <ul class="psychoanalysis-list">
-                    <li>Falar livremente sobre o que vier à mente</li>
-                    <li>Compreender padrões que se repetem em sua vida</li>
-                    <li>Dar sentido a sintomas e sofrimentos</li>
-                    <li>Elaborar conflitos internos e questões do passado</li>
-                    <li>Reconhecer desejos e angústias inconscientes</li>
-                </ul>
-                
-                <p>
-                    O processo analítico é único para cada pessoa. Não há um roteiro pré-definido - você é quem conduz sua própria descoberta, e o analista está ali para escutar, acolher e facilitar esse caminho de autoconhecimento.
-                </p>
-                
-                <div class="quote-box">
-                    <p>"A psicanálise não promete felicidade, mas oferece a possibilidade de você se conhecer melhor e viver de forma mais autêntica."</p>
+            <div class="psycho-intro">
+                <p>A psicanálise é um método criado por Sigmund Freud que investiga o inconsciente, ajudando você a compreender os processos mentais profundos que influenciam sua vida.</p>
+            </div>
+
+            <div class="psycho-cards-grid">
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">💭</div>
+                    <h3>Livre Associação</h3>
+                    <p>Fale livremente sobre o que vier à mente, sem censura ou julgamento</p>
                 </div>
-                
-                <h3 class="subsection-title">Por que fazer psicanálise longe de casa?</h3>
-                
-                <p>
-                    A experiência de imigração traz à tona questões profundas sobre identidade, pertencimento e reconstrução de si mesmo. A saudade, a adaptação cultural e o distanciamento da família frequentemente reativam conflitos antigos e criam novos.
-                </p>
-                
-                <p>
-                    Fazer análise em português, com alguém que compreende sua cultura, permite que você explore essas questões sem se perder em traduções - tanto linguísticas quanto emocionais.
-                </p>
+
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">🔄</div>
+                    <h3>Padrões Repetitivos</h3>
+                    <p>Compreenda os padrões que se repetem em sua vida e relacionamentos</p>
+                </div>
+
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">🧩</div>
+                    <h3>Sentido aos Sintomas</h3>
+                    <p>Dê significado aos seus sofrimentos e conflitos internos</p>
+                </div>
+
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">⏳</div>
+                    <h3>Elaboração do Passado</h3>
+                    <p>Trabalhe questões antigas que ainda ressoam no presente</p>
+                </div>
+
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">🌊</div>
+                    <h3>Inconsciente</h3>
+                    <p>Reconheça desejos e angústias que estão além da consciência</p>
+                </div>
+
+                <div class="psycho-card">
+                    <div class="psycho-card-icon">🎯</div>
+                    <h3>Seu Próprio Caminho</h3>
+                    <p>Você conduz sua descoberta, sem roteiro pré-definido</p>
+                </div>
+            </div>
+
+            <div class="psycho-quote-visual">
+                <div class="quote-icon">"</div>
+                <p>A psicanálise não promete felicidade, mas oferece a possibilidade de você se conhecer melhor e viver de forma mais autêntica.</p>
             </div>
         </div>
     </section>
@@ -1072,7 +1133,7 @@
                 
                 <div class="about-text">
                     <h3>Diego Scheid</h3>
-                    <p class="subtitle">Psicólogo registrado no Brasil (CRP 08/24218) e Psicanalista</p>
+                    <p class="subtitle">Psicólogo (CRP 08/24218) e Psicanalista</p>
                     
                     <p>
                         Olá, eu sou Diego Scheid.
@@ -1151,9 +1212,9 @@
                     <div class="footer-brand">Escuta Brasileira</div>
                     <p>Psicoterapia e Psicanálise em Português para Brasileiros no Canadá. Um espaço de escuta e acolhimento que compreende sua cultura e sua história.</p>
                     <div class="social-links">
-                        <a href="https://instagram.com/psicanalise.br" target="_blank">📷</a>
+                        <a href="https://instagram.com/escutabrasileira" target="_blank">📷</a>
                         <a href="https://wa.me/5541999999999" target="_blank">💬</a>
-                        <a href="mailto:diego@psicanalise.br">✉️</a>
+                        <a href="mailto:diego@escutabrasileira.com">✉️</a>
                     </div>
                 </div>
                 
@@ -1212,7 +1273,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.benefit-card, .step, .pricing-card').forEach(el => {
+        document.querySelectorAll('.benefit-card, .step, .psycho-card, .pain-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'all 0.6s ease';
